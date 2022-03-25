@@ -1,13 +1,13 @@
 <template>
-  <div class="navBar">
+  <div class="footer">
     <div class="logo">
       <img src="" alt=""> MasterCake
     </div>
     <div class="navLinks">
       <ul>
-        <a href=""><li>Inicio</li></a>
         <a href=""><li>Clientes</li></a>
         <a href=""><li>Contacto</li></a>
+        <li class="address">Av. Salsi Puedes #30, Col. Cañitas</li>
       </ul>
     </div>
   </div>
@@ -19,16 +19,17 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .navBar {
-    color: #6D28D9;
+  .footer {
+    border-radius: 20px 20px 0 0;
+    background: #6D28D9;
+    color: #FFFFFF;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 25px 0;
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
   }
@@ -41,7 +42,7 @@ export default {
   ul {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 20px;
   }
 
   a {
@@ -50,13 +51,12 @@ export default {
 
   li {
     list-style: none;
-    color: #27272A;
-    font-weight: 600;
-    font-size: large;
+    color: #FFFFFF;
+    font-weight: 300;
   }
 
-  @media (max-width: 600px) {
-  .logo {
+@media (max-width: 600px) {
+  .logo, .address {
     display: none;
   }
 }
