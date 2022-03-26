@@ -5,10 +5,10 @@
     </div>
     <div class="navLinks">
       <ul>
-        <li><router-link to="/">Inicio</router-link></li>
-        <li><router-link to="/pedidos">Pedidos</router-link></li>
-        <li><router-link to="/pastelero">Pastelero</router-link></li>
-        <li><router-link to="/contacto">Contacto</router-link></li>
+        <li><router-link to="/" class="inicio">Inicio</router-link></li>
+        <li><router-link to="/pedidos" class="pedidos">Pedidos</router-link></li>
+        <li><router-link to="/pastelero" class="pastelero">Pastelero</router-link></li>
+        <li><router-link to="/contacto" class="contacto">Contacto</router-link></li>
       </ul>
     </div>
   </div>
@@ -52,21 +52,21 @@ export default {
 
   a {
     text-decoration: none;
+    color: #404040;
+  }
+
+  a:hover {
+    color: #171717;
   }
 
   li {
     list-style: none;
     font-weight: 600;
     font-size: large;
-    color: #404040;
-  }
-
-  li:hover {
-    color: #171717;
   }
 
   @media (max-width: 650px) {
-  .logo, .inicio, .contacto {
+  .logo, .contacto, .pastelero {
     display: none;
   }
 

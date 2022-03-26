@@ -5,9 +5,10 @@
     </div>
     <div class="navLinks">
       <ul>
-        <a href=""><li>Pedidos</li></a>
-        <a href=""><li>Pastelero</li></a>
-        <a href=""><li>Contacto</li></a>
+        <li><router-link to="/" class="inicio">Inicio</router-link></li>
+        <li><router-link to="/pedidos" class="pedidos">Pedidos</router-link></li>
+        <li><router-link to="/pastelero" class="pastelero">Pastelero</router-link></li>
+        <li><router-link to="/contacto" class="contacto">Contacto</router-link></li>
         <contact-info class="contactInfo"/>
       </ul>
     </div>
@@ -52,6 +53,7 @@ export default {
 
   a {
     text-decoration: none;
+    color: #FFFFFF;
   }
 
   li {

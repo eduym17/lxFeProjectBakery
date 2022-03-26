@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Mensaje de pastelero</h1>
+  <div class="content">
+    <h1>Página de pastelero</h1>
   </div>
 </template>
 
@@ -10,7 +10,22 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  .content {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../assets/background-main-sm.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    overflow: hidden;
+  }
 
-
+  .heroText {
+    font-size: 60px;
+    color: #18181B;
+  }
 </style>

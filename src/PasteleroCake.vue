@@ -1,16 +1,16 @@
 <template>
- <form-bake/>
+ <content-pastelero/>
 </template>
 
 <script>
-import FormBake from './components/FormBake.vue'
+import ContentPastelero from './components/ContentPastelero.vue'
 
 export default {
-  components: { FormBake },
+  components: { ContentPastelero },
 
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

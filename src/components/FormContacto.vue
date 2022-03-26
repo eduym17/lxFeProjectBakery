@@ -39,10 +39,12 @@ export default {
     font-weight: 800;
     font-size: x-large;
     margin-bottom: 25px;
+    max-width: 450px;
   }
 
   .form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
@@ -86,7 +88,7 @@ export default {
     color: white;
     font-size: large;
     border: none;
-    padding: 10px 15px;
+    padding: 5px 15px;
     border-radius: 30px;
     cursor: pointer;
   }
