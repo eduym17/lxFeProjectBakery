@@ -1,7 +1,7 @@
 <template>
   <div class="navBar">
     <div class="logo">
-      <img src="" alt=""> MasterCake
+      <router-link to="/">MasterCake</router-link>
     </div>
     <div class="navLinks">
       <ul>
@@ -35,13 +35,14 @@ export default {
     right: 0;
   }
 
-  .navBar:hover {
-    color: #4C1D95;
-  }
-
   .logo {
     font-size: xx-large;
     font-weight: 700;
+    color: white;
+  }
+
+  .logo:hover {
+    color: #6D28D9;
   }
 
   ul {
@@ -52,11 +53,11 @@ export default {
 
   a {
     text-decoration: none;
-    color: #404040;
+    color: white;
   }
 
   a:hover {
-    color: #171717;
+    color: #6D28D9;
   }
 
   li {
@@ -71,7 +72,7 @@ export default {
   }
 
   .navBar {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 }
 </style>

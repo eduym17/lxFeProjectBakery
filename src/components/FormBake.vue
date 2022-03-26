@@ -38,8 +38,12 @@ export default {
   }
 
   .header {
-    color: #171717;
+    color: white;
     font-weight: 600;
+    background: #5B21B6;
+    width: 100%;
+    padding: 3px;
+    border-radius: 15px;
   }
 
   .input {

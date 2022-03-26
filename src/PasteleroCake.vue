@@ -1,5 +1,7 @@
 <template>
- <content-pastelero/>
+  <div class="content">
+    <content-pastelero/>
+  </div>
 </template>
 
 <script>

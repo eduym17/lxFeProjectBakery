@@ -38,12 +38,16 @@ export default {
   }
 
   .header {
-    color: #171717;
+   color: white;
     font-weight: 600;
+    background: #6D28D9;
+    width: 100%;
+    padding: 3px;
+    border-radius: 15px;
   }
 
   .input {
-    background: #5B21B6;
+    background: #6D28D9;
     color: white;
     display: flex;
     justify-content: flex-start;
@@ -55,7 +59,7 @@ export default {
   }
 
   .input:hover {
-    background: #6D28D9;
+    background: #5B21B6;
     font-weight: 600;
   }
 

@@ -67,7 +67,7 @@ export default {
   }
 
 @media (max-width: 650px) {
-  .logo, .contactInfo {
+  .logo, .contactInfo, .inicio {
     display: none;
   }
 

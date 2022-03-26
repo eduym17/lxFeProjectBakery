@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h1>Página de pastelero</h1>
+    <h1>¡Sobran muchos pasteles aún!</h1>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   .content {
     height: 100vh;
     width: 100vw;
-    background-image: url("../assets/background-main-sm.jpg");
+    background-image: url("../assets/bgblack2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -24,8 +24,12 @@ export default {
     overflow: hidden;
   }
 
-  .heroText {
-    font-size: 60px;
-    color: #18181B;
+  h1 {
+    color: white;
+    background: #6D28D9;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 15px;
   }
+
 </style>

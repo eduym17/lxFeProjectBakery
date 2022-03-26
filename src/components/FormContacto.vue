@@ -35,11 +35,16 @@ export default {
 
 <style scoped>
   .header {
-    color: #171717;
     font-weight: 800;
     font-size: x-large;
     margin-bottom: 25px;
     max-width: 450px;
+    color: white;
+    font-weight: 600;
+    background: #6D28D9;
+    padding: 5px;
+    margin: 25px;
+    border-radius: 25px;
   }
 
   .form {

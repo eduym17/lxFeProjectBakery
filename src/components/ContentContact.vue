@@ -1,11 +1,13 @@
 <template>
-    <div class="content">
-    <h1>Página de contacto</h1>
+  <div class="content">
+    <form-contacto/>
   </div>
 </template>
 
 <script>
+import FormContacto from './FormContacto.vue'
 export default {
+  components: { FormContacto },
 
 }
 </script>
@@ -14,7 +16,7 @@ export default {
   .content {
     height: 100vh;
     width: 100vw;
-    background-image: url("../assets/background-main-sm.jpg");
+    background-image: url("../assets/bgblack3.jpg");
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -24,9 +26,9 @@ export default {
     overflow: hidden;
   }
 
-  .heroText {
+  h1 {
     font-size: 60px;
-    color: #18181B;
+    color: white;
   }
 
 </style>

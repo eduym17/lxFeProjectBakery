@@ -16,7 +16,7 @@ export default {
   .content {
     height: 100vh;
     width: 100vw;
-    background-image: url("../assets/background-main-sm.jpg");
+    background-image: url("../assets/bgblack.jpg");
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -28,7 +28,19 @@ export default {
 
   .heroText {
     font-size: 60px;
-    color: #18181B;
+    color: #ffffff;
+    background: linear-gradient(90deg, #6D28D9, #5519b6);
+    padding: 10px;
+    margin: 10px 25px;
+    border-radius: 15px;
+  }
+
+  h2 {
+    color: white;
+    background: linear-gradient(180deg, #6D28D9, #5519b6);
+    padding: 3px;
+    margin: 10px 25px;
+    border-radius: 5px;
   }
 
   button {
@@ -46,4 +58,9 @@ export default {
     font-weight: 600;
   }
 
+  @media (max-width: 650px) {
+    .heroText {
+      font-size: 40px;
+    }
+  }
 </style>

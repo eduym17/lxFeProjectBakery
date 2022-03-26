@@ -20,7 +20,7 @@ export default {
   .content {
     height: 100vh;
     width: 100vw;
-    background-image: url("../assets/background-main-sm.jpg");
+    background-image: url("../assets/bgblack1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
