@@ -1,6 +1,7 @@
 <template>
   <div class="form-content">
-    <div class="header">¡Pronto nos contactaremos contigo!</div>
+    <div class="header"><h1>¡Déjanos tus datos!</h1></div>
+    <h2>Pronto te contactaremos.</h2>
     <div class="form-container">
       <form action="" class="form">
         <div class="inputs">
@@ -34,16 +35,15 @@ export default {
 </script>
 
 <style scoped>
-  .header {
+  .header, h2 {
     font-weight: 800;
-    font-size: x-large;
     margin-bottom: 25px;
     max-width: 450px;
     color: white;
     font-weight: 600;
     background: #6D28D9;
-    padding: 5px;
-    margin: 25px;
+    padding: 10px;
+    margin: 15px 25px;
     border-radius: 25px;
   }
 
