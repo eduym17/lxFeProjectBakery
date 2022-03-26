@@ -2,17 +2,15 @@
   <div class="content">
     <form-bake/>
     <form-toppings/>
-    <form-contacto/>
   </div>
 </template>
 
 <script>
 import FormBake from '../components/FormBake.vue'
-import FormContacto from './FormContacto.vue'
 import FormToppings from './FormToppings.vue'
 
 export default {
-  components: { FormBake, FormToppings, FormContacto },
+  components: { FormBake, FormToppings },
 }
 </script>
 
@@ -35,4 +33,10 @@ export default {
     color: #18181B;
   }
 
+  @media (max-width: 650px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 </style>
