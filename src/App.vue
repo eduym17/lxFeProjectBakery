@@ -1,13 +1,11 @@
 <template>
   <HelloWorld msg="Welcome to Your Vue.js App"/>
   <NavBar/>
-  <content-main/>
+  <router-view/>
   <footer-main/>
-
 </template>
 
 <script>
-import ContentMain from './components/ContentMain.vue'
 import FooterMain from './components/FooterMain.vue'
 import NavBar from './components/NavBar.vue'
 // import HelloWorld from './components/HelloWorld.vue'
@@ -17,7 +15,6 @@ export default {
   components: {
     // HelloWorld,
     NavBar,
-    ContentMain,
     FooterMain,
   }
 }

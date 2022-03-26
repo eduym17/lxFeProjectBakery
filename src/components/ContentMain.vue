@@ -1,8 +1,8 @@
 <template>
   <div class="content">
-    <h1 class="heroText">Cómete el pan, cómetelo, cómetelo...</h1>
-    <h2>¡Quitan el trapo y no lo ponen!</h2>
-    <button>Comprar aquí</button>
+    <h1 class="heroText">¿Ganas de endulzar tu día?</h1>
+    <h2>¡Prueba uno de nuestros pasteles!</h2>
+    <router-link to="/pedidos"><button>Comprar aquí</button></router-link>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .content {
     height: 100vh;
     width: 100vw;

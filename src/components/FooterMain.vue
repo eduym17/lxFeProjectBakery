@@ -1,20 +1,25 @@
 <template>
   <div class="footer">
     <div class="logo">
-      <img src="" alt=""> MasterCake
+      MasterCake
     </div>
     <div class="navLinks">
       <ul>
-        <a href=""><li>Clientes</li></a>
+        <a href=""><li>Pedidos</li></a>
+        <a href=""><li>Pastelero</li></a>
         <a href=""><li>Contacto</li></a>
-        <li class="address">Av. Salsi Puedes #30, Col. Cañitas</li>
+        <contact-info class="contactInfo"/>
       </ul>
     </div>
   </div>
 </template>
 
 <script>
+import ContactInfo from './ContactInfo.vue'
+
+
 export default {
+  components: { ContactInfo },
 
 }
 </script>
@@ -55,9 +60,18 @@ export default {
     font-weight: 300;
   }
 
-@media (max-width: 600px) {
-  .logo, .address {
+  li:hover {
+    font-weight: 600;    
+  }
+
+@media (max-width: 650px) {
+  .logo, .contactInfo {
     display: none;
+  }
+
+  ul {
+    justify-self: flex-end;
+    align-self: flex-end;
   }
 }
 </style>

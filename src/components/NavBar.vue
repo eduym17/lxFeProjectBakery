@@ -5,9 +5,10 @@
     </div>
     <div class="navLinks">
       <ul>
-        <a href=""><li>Inicio</li></a>
-        <a href=""><li>Clientes</li></a>
-        <a href=""><li>Contacto</li></a>
+        <li><router-link to="/">Inicio</router-link></li>
+        <li><router-link to="/pedidos">Pedidos</router-link></li>
+        <li><router-link to="/pastelero">Pastelero</router-link></li>
+        <li><router-link to="/contacto">Contacto</router-link></li>
       </ul>
     </div>
   </div>
@@ -24,13 +25,18 @@ export default {
   .navBar {
     color: #6D28D9;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
+    padding: 15px 0;
+    margin: 0 25px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+  }
+
+  .navBar:hover {
+    color: #4C1D95;
   }
 
   .logo {
@@ -41,7 +47,7 @@ export default {
   ul {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 25px;
   }
 
   a {
@@ -50,14 +56,22 @@ export default {
 
   li {
     list-style: none;
-    color: #27272A;
     font-weight: 600;
     font-size: large;
+    color: #404040;
   }
 
-  @media (max-width: 600px) {
-  .logo {
+  li:hover {
+    color: #171717;
+  }
+
+  @media (max-width: 650px) {
+  .logo, .inicio, .contacto {
     display: none;
+  }
+
+  .navBar {
+    justify-content: flex-end;
   }
 }
 </style>
