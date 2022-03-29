@@ -3,21 +3,9 @@
     <div class="header">Elige tu pastel ideal:</div>
     <div class="form-container">
       <form action="" class="form">
-        <div class="input">
-          <input type="checkbox" id="chocolate">
-          <label for="chocolate">Chocolate</label>
-        </div>
-        <div class="input">
-          <input type="checkbox" id="fresa">
-          <label for="fresa">Fresa</label>
-        </div>
-        <div class="input">
-          <input type="checkbox" id="fresa">
-          <label for="fresa">Fresa</label>
-        </div>
-        <div class="input">
-          <input type="checkbox" id="vainilla">
-          <label for="vainilla">Vainilla</label>
+        <div class="input" v-for="flavour in cakes" :key="flavour.id">
+          <input type="checkbox" :id="flavour.id">
+          <label :for="flavour.id">{{ capitalizer(flavour.name) }}</label>
         </div>
       </form>
     </div>
@@ -26,7 +14,31 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      cakes : [
+        {name: 'chocolate',
+        id: 1},
+        {name: 'fresa',
+        id: 2},
+        {name: 'vainilla',
+        id: 3},
+        {name: 'caramelo',
+        id: 4},
+        {name: 'canoli',
+        id: 5},
+        {name: 'coco',
+        id: 6},
+      ]
+    }
+  },
+  methods: {
+    capitalizer(text){
+      text = text.split('');
+      text[0] = text[0].toUpperCase();
+      return text.join('')
+    }
+  }
 }
 </script>
 

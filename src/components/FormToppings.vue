@@ -3,21 +3,9 @@
     <div class="header">Elige tus topings:</div>
     <div class="form-container">
       <form action="" class="form">
-        <div class="input">
-          <input type="checkbox" id="cereza">
-          <label for="cereza">Cereza</label>
-        </div>
-        <div class="input">
-          <input type="checkbox" id="galleta">
-          <label for="galleta">Galleta</label>
-        </div>
-        <div class="input">
-          <input type="checkbox" id="chispas">
-          <label for="chispas">Chispas</label>
-        </div>
-        <div class="input">
-          <input type="checkbox" id="moras">
-          <label for="moras">Moras</label>
+        <div v-for="toppingue in toppings" class="input" :key="toppingue.id" >
+          <input type="checkbox" :id="toppingue.id" >
+          <label :for="toppingue.id" >{{ capitalizer(toppingue.topping) }}</label>
         </div>
       </form>
     </div>
@@ -26,7 +14,33 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      toppings : [
+        {topping : 'cereza',
+        id: 1},
+        {topping : 'galleta',
+        id: 2},
+        {topping : 'chispas',
+        id: 3},
+        {topping : 'moras',
+        id: 4},
+        {topping: 'arándano',
+        id: 5},
+        {topping : 'malvaviscos',
+        id: 6},
+        {topping : 'chocolate blanco',
+        id: 7}
+      ],
+    }
+  },
+  methods: {
+    capitalizer(text){
+      text = text.split('');
+      text[0] = text[0].toUpperCase();
+      return text.join('')
+    }
+  }
 }
 </script>
 
