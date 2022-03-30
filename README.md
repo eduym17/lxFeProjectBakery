@@ -1,24 +1,32 @@
-# fe-project-bakery
+![](https://img.shields.io/badge/LaunchX-blueviolet)
 
-## Project setup
-```
-npm install
-```
+# Project Name
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+> Personal library app.
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Built With
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- VueJS
+
+## Live Demo (if available)
+
+[Live Demo Link Not Available]()
+
+## Authors
+
+👤 **Eduardo Yañez**
+
+- GitHub: [@eduym17](https://github.com/eduym17)
+- Twitter: [@Edu_YM](https://twitter.com/Edu_YM)
+- LinkedIn: [Eduardo Yañez](https://www.linkedin.com/in/eduardoym/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
